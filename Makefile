@@ -8,6 +8,7 @@ help:
 	@echo "        most4        most 4 philosophers eat at same time"
 	@echo "        odd_even     odd get left and even get right"
 	@echo "        dielock      there is nothing done to prevent dielock"
+	@echo "        take2        take two chopsticks at once"
 	@echo ""
 
 most4:
@@ -22,3 +23,6 @@ dielock:
 	@echo "  now using 'dielock' as target"
 	g++ src/main_dielock.cpp src/mysemop.cpp src/philosopher.cpp -o a.out
 
+take2:
+	@echo "  now using 'take2' as target"
+	g++ src/main_take2.cpp src/mysemop.cpp src/philosopher.cpp -o a.out

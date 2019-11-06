@@ -10,20 +10,16 @@ int room;
 int chopsticks[5];
 
 int main(int argc, char * args[]) {
-	for (int i = 0; i < 5; ++i) {
+	for (int i = 0; i < 5; ++i)
 		chopsticks[i] = CreateSem(1);
-	}
 	room = CreateSem(5);
-
 
 	int fpid = 1;
 	int amount = 5;
-	while (fpid != 0 && --amount) {
+	while (fpid != 0 && --amount)
 		fpid = fork();
-	}
 
 	philosopher(amount);
-
 
 	return 0;
 }
