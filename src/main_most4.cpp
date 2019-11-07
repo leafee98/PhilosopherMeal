@@ -12,7 +12,7 @@ int chopsticks[5];
 int main(int argc, char * args[]) {
 	for (int i = 0; i < 5; ++i)
 		chopsticks[i] = CreateSem(1);
-	room = CreateSem(5);
+	room = CreateSem(4);
 
 	int fpid = 1;
 	int amount = 5;
