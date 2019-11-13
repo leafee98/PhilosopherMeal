@@ -44,7 +44,7 @@ void philosopher(int i) {
 			printf("philosopher %d put down left\n", i);
 
 			Vsem(chopsticks[(i + 1) % 5]);
-			printf("philosopher %d put down left\n", i);
+			printf("philosopher %d put down right\n", i);
 		} else {
 			Psem(chopsticks[(i + 1) % 5]);
 			printf("philosopher %d get right\n", i);
@@ -55,7 +55,7 @@ void philosopher(int i) {
 			eat(i);
 
 			Vsem(chopsticks[(i + 1) % 5]);
-			printf("philosopher %d put down left\n", i);
+			printf("philosopher %d put down right\n", i);
 
 			Vsem(chopsticks[i]);
 			printf("philosopher %d put down left\n", i);

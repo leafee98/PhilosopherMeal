@@ -50,7 +50,7 @@ void philosopher(int i) {
 		printf("philosopher %d put down left\n", i);
 
 		Vsem(chopsticks[(i + 1) % 5]);
-		printf("philosopher %d put down left\n", i);
+		printf("philosopher %d put down right\n", i);
 	}
 }
 
